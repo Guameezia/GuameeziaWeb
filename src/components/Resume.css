@@ -1,0 +1,124 @@
+.resume {
+  padding: 100px 0;
+  background: var(--bg-light);
+}
+
+.resume-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.resume-section {
+  margin-bottom: 4rem;
+}
+
+.resume-section:last-child {
+  margin-bottom: 0;
+}
+
+.resume-section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--accent-color);
+  display: inline-block;
+}
+
+.resume-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.resume-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.resume-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.resume-item h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0;
+  flex: 1;
+}
+
+.resume-date {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  font-weight: 500;
+  white-space: nowrap;
+  background: var(--bg-light);
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+}
+
+.resume-institution {
+  font-size: 1.1rem;
+  color: var(--accent-color);
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+.resume-location {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  margin: 0.25rem 0;
+}
+
+.resume-description {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .resume {
+    padding: 60px 0;
+  }
+
+  .resume-section {
+    margin-bottom: 3rem;
+  }
+
+  .resume-section-title {
+    font-size: 1.5rem;
+  }
+
+  .resume-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-date {
+    margin-top: 0.5rem;
+  }
+
+  .resume-item h4 {
+    font-size: 1.1rem;
+  }
+
+  .resume-institution {
+    font-size: 1rem;
+  }
+}
