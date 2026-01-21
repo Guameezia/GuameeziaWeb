@@ -57,7 +57,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      # 备用方案：推送到 gh-pages 分支（如果 GitHub Pages 设置为从分支部署）
+
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
         if: always()
