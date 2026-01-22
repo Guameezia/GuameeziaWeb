@@ -3,8 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
+  background: var(--bg-color);
   padding: 120px 0 80px;
+  transition: background-color 0.3s ease;
 }
 
 .hero-header {

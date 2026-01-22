@@ -10,9 +10,19 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
+[data-theme="dark"] .header {
+  background: rgba(0, 0, 0, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
 .header.scrolled {
   background: rgba(255, 255, 255, 0.98);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] .header.scrolled {
+  background: rgba(0, 0, 0, 0.98);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
 }
 
 .header-content {
@@ -101,6 +111,17 @@
   display: flex;
   gap: 2rem;
   align-items: center;
+  position: static;
+}
+
+/* 在桌面端隐藏移动端菜单内容 */
+.nav-mobile-actions {
+  display: none;
+}
+
+/* 确保桌面端导航链接正常显示 */
+.nav a {
+  white-space: nowrap;
 }
 
 .nav a {
@@ -153,41 +174,132 @@
     display: flex;
   }
 
+  /* 在手机端隐藏header中的联系图标，它们会在菜单中显示 */
   .header-contact-icons {
-    gap: 0.4rem;
+    display: none;
   }
 
-  .header-contact-icon {
-    width: 32px;
-    height: 32px;
-  }
-
-  .header-contact-icon svg {
-    width: 18px;
-    height: 18px;
-  }
-
+  /* 在手机端隐藏桌面导航 */
   .nav {
-    position: absolute;
-    top: 100%;
+    display: none;
+  }
+
+  .header-actions {
+    gap: 0.5rem;
+  }
+
+  /* 菜单打开时的背景遮罩 */
+  .nav.open::before {
+    content: '';
+    position: fixed;
+    top: 70px;
     left: 0;
     right: 0;
-    background: white;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    animation: fadeIn 0.3s ease;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* 在移动端，显示移动菜单 */
+  .nav {
+    display: flex;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 30%;
+    min-width: 250px;
+    max-width: 350px;
+    background: var(--bg-color);
     flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transform: translateY(-100%);
+    padding: 1.5rem;
+    gap: 1.5rem;
+    box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.15);
+    transform: translateX(100%);
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    border-left: 1px solid var(--border-color);
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    z-index: 999;
+    border-radius: 0 0 0 12px;
   }
 
   .nav.open {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
     visibility: visible;
   }
+
+  .nav a {
+    padding: 0.75rem 0;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  /* 在移动端显示移动菜单内容 */
+  .nav-mobile-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 0.5rem;
+  }
+
+  .nav-mobile-controls {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .nav-contact-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: var(--bg-light);
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+  }
+
+  .nav-contact-icon:hover {
+    opacity: 1;
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .nav-contact-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
 
   .menu-toggle span:nth-child(1) {
     transform: rotate(0deg);

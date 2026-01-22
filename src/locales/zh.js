@@ -33,10 +33,10 @@ export const zh = {
       title: "2025 SURF at XJTLU",
       description: "我參加了2025年西交利物浦大學暑期本科生研究（SURF），導師是楊其儒博士。我的主要職責是製作專案海報，我負責使用LaTeX進行最終專案海報的組織和排版，同時也參與了基於Python的機器學習模型的開發。",
     },
-    // project2: {
-    //   title: "專案名稱 2",
-    //   description: "專案的簡短描述，介紹這個專案是做什麼的。",
-    // },
+    project2: {
+      title: "西浦體育館預約助手",
+      description: "我開發了一個基於Python的Selenium自動化腳本，用於幫助同學搶先預約羽毛球場/網球場。",
+    },
     // project3: {
     //   title: "專案名稱 3",
     //   description: "專案的簡短描述，介紹這個專案是做什麼的。",

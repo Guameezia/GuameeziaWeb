@@ -34,8 +34,8 @@ export const en = {
       description: "I participated in the 2025 SURF (Summer Undergraduate Research Fellowship) program at Xi'an Jiaotong-Liverpool University (XJTLU) under the supervision of Dr. Chi-Ru Yang. With the poster output as my core responsibility, I led the organization and compilation of the final project poster using LaTeX, while also participating in the development of the Python-based machine learning model for the project.",
     },
     project2: {
-      title: "Project Name 2",
-      description: "A brief description of the project, explaining what this project does.",
+      title: "XJTLU Sports Reservation Assistant",
+      description: "I developed a Python-based Selenium automation script to help students reserve badminton or tennis courts in advance.",
     },
     project3: {
       title: "Project Name 3",

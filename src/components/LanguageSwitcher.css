@@ -1,7 +1,7 @@
 .language-switcher-btn {
   padding: 8px 16px;
   border: 2px solid var(--border-color);
-  background: white;
+  background: var(--bg-color);
   color: var(--text-color);
   border-radius: 8px;
   cursor: pointer;

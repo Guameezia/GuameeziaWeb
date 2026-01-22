@@ -11,13 +11,14 @@
 }
 
 .project-card {
-  background: white;
+  background: var(--bg-color);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
+  border: 1px solid var(--border-color);
 }
 
 .project-card:hover {
@@ -50,12 +51,16 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(99, 102, 241, 0.9);
+  background: rgba(85, 107, 47, 0.9);
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+
+[data-theme="dark"] .project-overlay {
+  background: rgba(251, 191, 36, 0.9);
 }
 
 .project-card:hover .project-overlay {
@@ -74,7 +79,7 @@
 }
 
 .project-link:hover {
-  background: white;
+  background: var(--bg-color);
   color: var(--primary-color);
 }
 

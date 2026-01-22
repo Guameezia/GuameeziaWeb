@@ -33,11 +33,12 @@
 }
 
 .resume-item {
-  background: white;
+  background: var(--bg-color);
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: var(--shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
 }
 
 .resume-item:hover {
