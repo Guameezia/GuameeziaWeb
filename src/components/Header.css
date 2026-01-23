@@ -232,7 +232,7 @@
     width: 70%;
     min-width: 250px;
     max-width: 350px;
-    background: var(--bg-color);
+    background: var(--bg-color) !important;
     flex-direction: column;
     padding: 1.5rem;
     gap: 1rem;
@@ -248,6 +248,14 @@
     border-radius: 0 0 0 12px;
   }
 
+  [data-theme="dark"] .nav {
+    background: #000000 !important;
+  }
+
+  [data-theme="light"] .nav {
+    background: #ffffff !important;
+  }
+
   .nav.open {
     transform: translateX(0);
     opacity: 1;
@@ -260,6 +268,7 @@
     text-align: left;
     width: 100%;
     display: block;
+    color: var(--text-color) !important;
   }
 
   /* 在移动端显示移动菜单内容 */
@@ -280,6 +289,13 @@
     gap: 1rem;
   }
 
+  .nav-mobile-controls .language-switcher-btn,
+  .nav-mobile-controls .theme-switcher-btn {
+    background: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    border-color: var(--border-color) !important;
+  }
+
   .nav-contact-icons {
     display: flex;
     justify-content: flex-start;
@@ -296,10 +312,15 @@
     height: 44px;
     border-radius: 10px;
     background: var(--bg-light);
-    color: var(--text-color);
+    color: var(--text-color) !important;
     text-decoration: none;
     transition: all 0.3s ease;
     opacity: 0.8;
+  }
+
+  .nav-contact-icon svg {
+    color: var(--text-color) !important;
+    fill: var(--text-color) !important;
   }
 
   .nav-contact-icon:hover {
