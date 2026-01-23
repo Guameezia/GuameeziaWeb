@@ -212,8 +212,10 @@ function Header({ isScrolled }) {
                 </a>
               )}
             </div>
-            <LanguageSwitcher />
-            <ThemeSwitcher />
+            <div className="header-controls">
+              <LanguageSwitcher />
+              <ThemeSwitcher />
+            </div>
             <button 
               className="menu-toggle"
               onClick={() => setIsMenuOpen(!isMenuOpen)}

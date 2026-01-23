@@ -38,6 +38,12 @@
   gap: 0.75rem;
 }
 
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .header-contact-icons {
   display: flex;
   align-items: center;
@@ -188,6 +194,11 @@
     gap: 0.5rem;
   }
 
+  /* 在手机端隐藏header中的语言和主题切换器，它们会在菜单中显示 */
+  .header-controls {
+    display: none;
+  }
+
   /* 菜单打开时的背景遮罩 */
   .nav.open::before {
     content: '';
@@ -196,8 +207,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: -1;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
     animation: fadeIn 0.3s ease;
     pointer-events: auto;
     cursor: pointer;
@@ -218,13 +229,13 @@
     position: fixed;
     top: 70px;
     right: 0;
-    width: 30%;
+    width: 70%;
     min-width: 250px;
     max-width: 350px;
     background: var(--bg-color);
     flex-direction: column;
     padding: 1.5rem;
-    gap: 1.5rem;
+    gap: 1rem;
     box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.15);
     transform: translateX(100%);
     opacity: 0;
@@ -243,10 +254,12 @@
     visibility: visible;
   }
 
-  .nav a {
+  .nav > a {
     padding: 0.75rem 0;
     font-size: 1.1rem;
     text-align: left;
+    width: 100%;
+    display: block;
   }
 
   /* 在移动端显示移动菜单内容 */
@@ -257,6 +270,7 @@
     padding-top: 1rem;
     border-top: 1px solid var(--border-color);
     margin-top: 0.5rem;
+    width: 100%;
   }
 
   .nav-mobile-controls {
