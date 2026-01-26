@@ -28,7 +28,7 @@ function Header({ isScrolled }) {
       if (event.target.closest('.menu-toggle') || event.target.closest('.header-actions')) {
         return
       }
-      // 其他情况关闭菜单
+      // 点击遮罩层或其他外部区域关闭菜单
       setIsMenuOpen(false)
     }
 
@@ -82,10 +82,8 @@ function Header({ isScrolled }) {
                     aria-label={`School Email: ${siteConfig.contact.eduEmail}`}
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                      <polyline points="22,6 12,13 2,6"/>
-                      <path d="M12 13l-4-3v6h8v-6l-4 3z"/>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                     </svg>
                   </a>
                 )}
@@ -162,10 +160,8 @@ function Header({ isScrolled }) {
                   title={siteConfig.contact.eduEmail}
                   aria-label={`School Email: ${siteConfig.contact.eduEmail}`}
                 >
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                    <polyline points="22,6 12,13 2,6"/>
-                    <path d="M12 13l-4-3v6h8v-6l-4 3z"/>
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                   </svg>
                 </a>
               )}

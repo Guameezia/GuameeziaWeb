@@ -199,29 +199,6 @@
     display: none;
   }
 
-  /* 菜单打开时的背景遮罩 */
-  .nav.open::before {
-    content: '';
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 998;
-    animation: fadeIn 0.3s ease;
-    pointer-events: auto;
-    cursor: pointer;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 
   /* 在移动端，显示移动菜单 */
   .nav {
@@ -249,7 +226,8 @@
   }
 
   [data-theme="dark"] .nav {
-    background: #000000 !important;
+    background: #0a0a0a !important;
+    border-left: 1px solid #1a1a1a;
   }
 
   [data-theme="light"] .nav {
