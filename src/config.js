@@ -23,7 +23,7 @@ export const siteConfig = {
     skills: [
       "React",
       "JavaScript",
-      "TypeScript",
+      "TypeScript", 
       "CSS",
       "HTML",
       "Python",

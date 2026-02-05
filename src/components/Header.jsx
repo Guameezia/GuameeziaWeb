@@ -58,7 +58,7 @@ function Header({ isScrolled }) {
             <a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero') }}>{t.nav.home}</a>
             <a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about') }}>{t.nav.about}</a>
             <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToSection('projects') }}>{t.nav.projects}</a>
-            <a href="#resume" onClick={(e) => { e.preventDefault(); scrollToSection('resume') }}>{t.nav.resume}</a>
+            {/* <a href="#resume" onClick={(e) => { e.preventDefault(); scrollToSection('resume') }}>{t.nav.resume}</a> */}
             <div className="nav-mobile-actions">
               <div className="nav-contact-icons">
                 {siteConfig.contact.gmail && (
