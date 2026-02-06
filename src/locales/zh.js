@@ -4,7 +4,7 @@ export const zh = {
   nav: {
     home: "首頁",
     about: "關於",
-    projects: "專案",
+    projects: "倉庫",
     resume: "履歷",
   },
   
@@ -25,10 +25,10 @@ export const zh = {
     skillsTitle: "技能",
   },
   
-  // 專案展示區域
+  // 倉庫展示區域
   projects: {
-    title: "專案展示",
-    viewProject: "查看專案",
+    title: "倉庫",
+    viewProject: "查看倉庫",
     project1: {
       title: "2025 SURF at XJTLU",
       description: "我參加了2025年西交利物浦大學暑期本科生研究（SURF），導師是楊其儒博士。我的主要職責是製作專案海報，我負責使用LaTeX進行最終專案海報的組織和排版，同時也參與了基於Python的機器學習模型的開發。",

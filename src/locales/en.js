@@ -4,7 +4,7 @@ export const en = {
   nav: {
     home: "Home",
     about: "About",
-    projects: "Projects",
+    projects: "Repository",
     resume: "Resume",
   },
   
@@ -25,10 +25,10 @@ export const en = {
     skillsTitle: "Skills",
   },
   
-  // Projects section
+  // Repository section
   projects: {
-    title: "Projects",
-    viewProject: "View Project",
+    title: "Repository",
+    viewProject: "View Repository",
     project1: {
       title: "2025 SURF at XJTLU",
       description: "I participated in the 2025 SURF (Summer Undergraduate Research Fellowship) program at Xi'an Jiaotong-Liverpool University (XJTLU) under the supervision of Dr. Chi-Ru Yang. With the poster output as my core responsibility, I led the organization and compilation of the final project poster using LaTeX, while also participating in the development of the Python-based machine learning model for the project.",

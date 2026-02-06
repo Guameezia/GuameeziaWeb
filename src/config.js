@@ -38,7 +38,7 @@ export const siteConfig = {
     ],
   },
   
-  // Projects - base data (image, links, tags)
+  // Repository - base data (image, links, tags)
   // Note: project titles/descriptions live in src/locales/en.js and src/locales/zh.js
   // Project IDs must match project1, project2, project3 in locale files
   projects: [
