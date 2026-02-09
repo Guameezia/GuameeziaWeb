@@ -12,9 +12,9 @@ function LanguageSwitcher() {
     <button
       className="language-switcher-btn"
       onClick={toggleLanguage}
-      aria-label={language === 'en' ? '切换到繁體中文' : 'Switch to English'}
+      aria-label={language === 'en' ? 'Switch to Chinese' : 'Switch to English'}
     >
-      {language === 'en' ? 'EN' : '國'}
+      {language === 'en' ? 'ZH' : 'EN'}
     </button>
   )
 }
