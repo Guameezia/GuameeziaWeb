@@ -44,13 +44,13 @@ export const siteConfig = {
   projects: [
     {
       id: 1, // matches project1 in locales
-      image: "https://raw.githubusercontent.com/Guameezia/2025_SURF_Poster/35d713459323f9db14ea6cba9d27d08233685906/Images/SVD.jpg", // replace with your project image URL
+      image: "/images/project-surf-svd.jpg",
       link: "https://github.com/Guameezia/2025_SURF_Poster",
       tags: ["LaTeX", "Python", "PyTorch"], // tech tags
     },
     {
       id: 2, // matches project2 in locales
-      image: "https://raw.githubusercontent.com/Guameezia/XJTLU-PEC-Court/68718e008f953631dcddd722b2972ae78b242308/tennisCourt.JPG", // replace with your project image URL
+      image: "/images/project-tennis-court.JPG",
       link: "https://github.com/Guameezia/XJTLU-PEC-Court.git",
       tags: ["Python", "Selenium"],
     },

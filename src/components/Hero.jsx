@@ -35,7 +35,7 @@ function Hero() {
             <div className="hero-image-placeholder">
               {/* You can place your photo here */}
               <img 
-                src="https://raw.githubusercontent.com/Guameezia/guameezia-website/3f30c5e42b53999916fe0b2de30c448f331d7840/portrait.JPG" 
+                src="/images/hero-portrait.JPG" 
                 alt={t.hero.name}
               />
             </div>
