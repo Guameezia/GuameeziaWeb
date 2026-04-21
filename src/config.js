@@ -48,12 +48,12 @@ export const siteConfig = {
       link: "https://github.com/Guameezia/2025_SURF_Poster",
       tags: ["LaTeX", "Python", "PyTorch"], // tech tags
     },
-    {
-      id: 2, // matches project2 in locales
-      image: "/images/project-tennis-court.JPG",
-      link: "https://github.com/Guameezia/XJTLU-PEC-Court.git",
-      tags: ["Python", "Selenium"],
-    },
+    // {
+    //   id: 2, // matches project2 in locales
+    //   image: "/images/project-tennis-court.JPG",
+    //   link: "https://github.com/Guameezia/XJTLU-PEC-Court.git",
+    //   tags: ["Python", "Selenium"],
+    // },
     // {
     //   id: 3, // matches project3 in locales
     //   image: "https://via.placeholder.com/400x300", // replace with your project image URL
